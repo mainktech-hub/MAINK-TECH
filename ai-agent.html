@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAINK TECH AI Website Builder</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <header class="bg-blue-600 text-white p-4 text-center">
+    <h1 class="text-3xl font-bold">MAINK TECH AI Website Builder</h1>
+  </header>
+  <main class="p-6">
+    <div id="chat-container" class="mb-4 h-64 overflow-y-auto border rounded p-2 bg-white">
+      <div id="chat-messages"></div>
+    </div>
+    <form id="website-form" class="space-y-4">
+      <input type="text" id="site-name" placeholder="Your Site Name" class="w-full p-2 border rounded" required>
+      <textarea id="site-content" placeholder="Describe your site (e.g., business, portfolio)" class="w-full p-2 border rounded" rows="3" required></textarea>
+      <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Generate Website</button>
+    </form>
+    <div id="download-section" class="mt-4 hidden">
+      <a id="download-link" class="bg-green-500 text-white px-4 py-2 rounded inline-block">Download Your Website</a>
+      <p class="mt-2">Follow these steps to host on GitHub Pages:</p>
+      <ol class="list-decimal ml-5">
+        <li>Create a new GitHub repository (e.g., your-site).</li>
+        <li>Upload the downloaded folder to the repository.</li>
+        <li>Go to Settings > Pages, set source to branch "main", folder "/ (root)".</li>
+        <li>Visit your site at https://your-username.github.io/your-site.</li>
+      </ol>
+    </div>
+  </main>
+  <script src="scripts/ai-agent.js"></script>
+</body>
+  </html>
