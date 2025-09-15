@@ -2,7 +2,7 @@ name: Deploy MAINK TECH Web Development Site to GitHub Pages
 
 on:
   push:
-    branches:
+    main:
       - main
 
 jobs:
