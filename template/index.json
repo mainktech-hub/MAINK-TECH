@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "name": "Landing Page",
+    "category": "Web",
+    "framework": "Bootstrap",
+    "html": "templates/landing.html",
+    "css": "templates/landing.css",
+    "thumbnail": "thumbnails/landing.jpg"
+  }
+]
